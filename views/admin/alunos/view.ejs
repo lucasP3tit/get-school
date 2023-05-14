@@ -1,0 +1,58 @@
+<%- include('../../partials/header.ejs') %>
+<%- include('../../partials/navbar.ejs') %>
+    <div class="container">
+        <div class="card mt-2">
+            <div class="card-header">
+                <h2>Detalhe do aluno</h2>
+            </div>
+            <div class="card-body">
+                <form id="form-aluno" method="POST" action="/admin/aluno/update/<%= aluno.id %>">
+                    <label for="matricula"><strong>Matrícula:</strong></label>
+                    <input type="text" disabled id="matricula" name="matricula" class="form-control mb-2" value="<%= aluno.matricula %>">
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" disabled id="nome" name="nome" class="form-control mb-2" value="<%= aluno.nome %>">
+                    <label for="matricula"><strong>Fone:</strong></label>
+                    <input type="text" disabled id="fone" name="fone" class="form-control mb-2" value="<%= aluno.fone %>">
+                    <label for="email"><strong>E-mail:</strong></label>
+                    <input type="text" disabled id="email" name="email" class="form-control mb-2" value="<%= aluno.email %>">
+                    <a id="btn-voltar" class="btn btn-primary mt-2" href="/admin/alunos">Voltar</a>
+                    <button id="btn-editar" class="btn btn-warning mt-2" onclick = "habilitarForm()">Editar</button>
+                    <button id="btn-salvar" disabled class ="btn btn-primary mt-2">Salvar</button>
+                    <button id="btn-cancelar" disabled class="btn btn-danger mt-2" onclick = "desabilitarForm()">Cancelar</button>
+                </form>
+                <form method ="POST" action="/admin/aluno/delete/<%= aluno.id %>" onsubmit="excluir(event)">
+                    <button class="btn btn-danger" id="btn-excluir">Excluir</button>
+                </form>
+            </div>  
+        </div>
+    </div>
+    <script>
+        function desabilitarForm(){
+            let form = document.getElementById("form-aluno");
+            event.preventDefault();
+            let campos = form.elements;
+            for (let i = 0; i <campos.length; i++) {
+                campos[i].disabled = true;
+            }
+            document.getElementById("btn-editar").removeAttribute("disabled");
+            document.getElementById("btn-voltar").removeAttribute("disabled");
+        }
+        function habilitarForm(){
+            let form = document.getElementById("form-aluno");
+            event.preventDefault();
+            let campos = form.elements;
+            for (let i = 0; i <campos.length; i++) {
+                campos[i].disabled = false;
+            }
+            document.getElementById("btn-editar").setAttribute("disabled", "disabled");
+        }
+
+        function excluir(event){
+           event.preventDefault();
+            let confirmacao = confirm("Tem certeza que deseja excluir?")
+            if (confirmacao) {
+                event.target.submit();
+            }
+        }
+    </script>
+<%- include('../../partials/footer.ejs') %>

@@ -1,0 +1,95 @@
+<%- include('partials/header.ejs') %>
+<nav class="navbar navbar-default bg-light">
+  <div class="container-fluid justify-content-center">
+    <div class="navbar-header">
+      <h2>Acesso Exclusivo</h2>
+    </di>
+  </div>
+</nav>   
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <a class="link-menu" href="/admin/alunos"><img src="./img/alunos.png" class="card-img-top" alt="icone alunos"></a>
+          <div class="card-body">
+            <h5 class="card-title text-center">Alunos</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a class="link-menu" href="/"><img src="./img/nota_fiscal.png" class="card-img-top" alt="icone nota fiscal"></a>
+          <div class="card-body">
+            <h5 class="card-title text-center">Laçamento Nota Fiscal</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card">
+          <a class="link-menu" href="/"><img src="./img/alerta_cobranca.png" class="card-img-top" alt="icone cobrança"></a>
+          <div class="card-body">
+            <h5 class="card-title text-center">Alerta Cobrança</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-4">
+          <div class="card">
+            <a class="link-menu" href="/"><img src="./img/frequencia.png" class="card-img-top" alt="icone frequência"></a>
+            <div class="card-body">
+              <h5 class="card-title text-center">Frequência</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a class="link-menu" href="/"><img src="./img/emissao_boleto.png" class="card-img-top" alt="ícone emissão boleto"></a>
+            <div class="card-body">
+              <h5 class="card-title text-center">Emissão de Boleto</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a class="link-menu" href="/"><img src="./img/email_cobranca.png" class="card-img-top" alt="icone email cobrança"></a>
+            <div class="card-body">
+              <h5 class="card-title text-center">Email de cobrança</h5>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-md-4">
+      <div class="card">
+        <a class="link-menu" href="/admin/fornecedores"><img src="./img/fornecedores.png" class="card-img-top" alt="icone fornecedores"></a>
+        <div class="card-body">
+          <h5 class="card-title text-center">Fornecedores</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <a class="link-menu" href="/"><img src="./img/fluxo_caixa.png" class="card-img-top" alt="icone fluxo de caixa"></a>
+        <div class="card-body">
+          <h5 class="card-title text-center">Fluxo de Caixa</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <a class="link-menu" href="/"><img src="./img/pagamentos.png" class="card-img-top" alt="icone pagamentos"></a>
+        <div class="card-body">
+          <h5 class="card-title text-center">Pagamentos</h5>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container text-center">
+  <a class="btn btn-primary btn-lg mt-2" href="/logout">
+      Sair
+  </a>
+</div>
+
+<%- include('partials/footer.ejs') %>

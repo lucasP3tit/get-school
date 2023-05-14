@@ -1,0 +1,71 @@
+<%- include('../../partials/header.ejs') %>
+<nav class="navbar navbar-default bg-light">
+    <div class="container-fluid justify-content-center">
+      <div class="navbar-header">
+        <h2>Listagem de Fornecedores</h2>
+      </di>
+    </div>
+  </nav>       
+<div class="container">
+        <hr>
+        <a class="btn btn-outline-success mt-2 form-control" href="/admin/fornecedor/create">
+            <i class="fas fa-box"></i>
+            + Novo fornecedor
+        </a>
+        <hr>
+        <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-search"></i></span>
+            <input type="text" id="searchInput" class="form-control" placeholder="Pesquisar fornecedor" oninput="searchOnChange()">
+        </div>
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Fone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <% fornecedores.forEach(fornecedor=>{ %>
+                        <tr>
+                            <td> <%=fornecedor.id%> </td>
+                            <td> <%=fornecedor.nomeFantasia%> </td>
+                            <td> <%=fornecedor.email%> </td>
+                            <td> <%=fornecedor.fone%> </td>
+                            <td> 
+                                <a class="btn btn-primary" href="/admin/fornecedor/view/<%= fornecedor.id %>">Detalhes</a>
+                            </td>
+                        </tr>
+                    <%})%>
+                </tbody>    
+        </table> 
+    </div>
+    
+    <div class="container text-center">
+        <a class="btn btn-outline-primary mt-2" href="/">
+            <i class="fa fa-home"></i> 
+            Voltar
+        </a>
+    </div>
+     
+    <script>
+        function searchOnChange() {
+            setTimeout(()=>{
+                var searchText = document.getElementById("searchInput").value;
+                var url = "/admin/fornecedor/busca?text=" + encodeURIComponent(searchText);
+                localStorage.setItem("campoValorFornecedor", searchText);
+                window.location.href = url;
+            }, 1500)
+        }
+
+        window.addEventListener("load", () => {
+            const valorSalvo = localStorage.getItem("campoValorFornecedor");
+            if (valorSalvo) {
+                document.getElementById("searchInput").value = valorSalvo;
+            }
+        })    
+
+    </script>
+<%- include('../../partials/footer.ejs') %>

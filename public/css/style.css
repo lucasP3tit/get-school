@@ -1,0 +1,19 @@
+#img-login{
+    width: 80px;
+}
+
+.card:hover{
+    background-color: lightgray;
+}
+.card-img, .card-img-bottom, .card-img-top {
+    width: 25%;
+}
+
+.link-menu{
+    text-align: center;
+}
+
+.img-avatar{
+    display: inline-block;
+    width:15%;
+}

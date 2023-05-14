@@ -1,0 +1,26 @@
+<%- include('../../partials/header.ejs') %>
+<%- include('../../partials/navbar.ejs') %>
+    <div class="container">
+        <div class="card mt-2">
+            <div class="card-header">
+                <h2>Detalhe do fornecedor</h2>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="/admin/fornecedor/update/<%= fornecedor.id %>">
+                    <label for="razaoSocial"><strong>Razão social:</strong></label>
+                    <input type="text" disabled id="razaoSocial" name="razaoSocial" class="form-control mb-2" value="<%= fornecedor.razaoSocial %>">
+                    <label for="nomeFantasia"><strong>Nome Fantasia:</strong></label>
+                    <input type="text" disabled id="nomeFantasia" name="nomeFantasia" class="form-control mb-2" value="<%= fornecedor.nomeFantasia %>">
+                    <label for="cnpj"><strong>Cnpj:</strong></label>
+                    <input type="text" disabled id="cnpj" name="cnpj" class="form-control mb-2" value="<%= fornecedor.cnpj %>">
+                    <label for="razaoSocial"><strong>Fone:</strong></label>
+                    <input type="text" disabled id="fone" name="fone" class="form-control mb-2" value="<%= fornecedor.fone %>">
+                    <label for="email"><strong>E-mail:</strong></label>
+                    <input type="text" disabled id="email" name="email" class="form-control mb-2" value="<%= fornecedor.email %>">
+                    <a class="btn btn-primary mt-2" href="/admin/fornecedores">Voltar</a>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+<%- include('../../partials/footer.ejs') %>
