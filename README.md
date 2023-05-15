@@ -1,5 +1,8 @@
-# Sistema GetSchool
+
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+
+# Sistema GetSchool
+
 ![Logo](https://github.com/cswisni/SistemaGetSchool/blob/main/LogoGetSchoolII.png)
 
 Sistema GetSchool é uma aplicação de gestão escolar em desenvolvimento para o Projeto Integrador do curso de Análise e Desenvolvimento de Sistemas do Centro Universitário Senac.
