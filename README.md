@@ -1,5 +1,4 @@
-
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%10DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 
 # Sistema GetSchool
 
@@ -21,9 +20,9 @@ Protótipo desenvolvido na ferramenta [Miro](https://miro.com/app/board/uXjVPMKh
 ## Requisitos
 Ter as seguintes aplicações instaladas na máquina:
 
--Node JS
--NPM
--SQLServer e criar o banco de dados "getschool" (o projeto utiliza a porta 1433 para comunicação com o serviço de banco de dados, usuario="sa", senha="abcd=1234", conforme configuração contida dentro do arquivo ./database/database.js, podendo ser ajustadas de acordo a necessidade. As tabelas serão geradas pelo Sequelize.)
+- Node JS
+- NPM
+- SQLServer e criar o banco de dados "getschool" (o projeto utiliza a porta 1433 para comunicação com o serviço de banco de dados, usuario="sa", senha="abcd=1234", conforme configuração contida dentro do arquivo ./database/database.js, podendo ser ajustadas de acordo a necessidade. As tabelas serão geradas pelo Sequelize.)
 
 Na raiz do projeto executar:
 * npm install (instalação das dependências)
