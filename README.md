@@ -6,16 +6,11 @@
 
 Sistema GetSchool é uma aplicação de gestão escolar em desenvolvimento para o Projeto Integrador do curso de Análise e Desenvolvimento de Sistemas do Centro Universitário Senac.
 
-A aplicação visa simplificar a administração de escolas e melhorar a comunicação entre professores, alunos e pais. 
+A aplicação visa simplificar a administração de escolas e melhorar a comunicação entre professores, alunos e pais.
 
 ## Protótipo
 
 Protótipo desenvolvido na ferramenta [Miro](https://miro.com/app/board/uXjVPMKhMEk=/?utm_source=notification&utm_medium=email&utm_campaign=daily-updates&utm_content=go-to-board/)
-
-## Tecnologias
-
-- [Miro](https://miro.com/app/board/uXjVPMKhMEk=/?utm_source=notification&utm_medium=email&utm_campaign=daily-updates&utm_content=go-to-board/)
-- Node.js
 
 ## Requisitos
 Ter as seguintes aplicações instaladas na máquina:
