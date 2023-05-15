@@ -5,7 +5,7 @@ Sistema GetSchool é uma aplicação de gestão escolar em desenvolvimento para 
 
 A aplicação visa simplificar a administração de escolas e melhorar a comunicação entre professores, alunos e pais. 
 
-## Skills
+## Tecnologias
 
 - Miro
 - Node.js
