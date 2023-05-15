@@ -8,6 +8,7 @@ A aplicação visa simplificar a administração de escolas e melhorar a comunic
 ## Skills
 
 Miro
+Node.js
 
 ## Protótipo
 
