@@ -1,4 +1,5 @@
 # Sistema GetSchool
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 ![Logo](https://github.com/cswisni/SistemaGetSchool/blob/main/LogoGetSchoolII.png)
 
 Sistema GetSchool é uma aplicação de gestão escolar em desenvolvimento para o Projeto Integrador do curso de Análise e Desenvolvimento de Sistemas do Centro Universitário Senac.
@@ -7,12 +8,14 @@ A aplicação visa simplificar a administração de escolas e melhorar a comunic
 
 ## Tecnologias
 
-- Miro
+- [Miro](https://miro.com/app/board/uXjVPMKhMEk=/?utm_source=notification&utm_medium=email&utm_campaign=daily-updates&utm_content=go-to-board/)
 - Node.js
 
 ## Protótipo
 
 Protótipo desenvolvido na ferramenta [Miro](https://miro.com/app/board/uXjVPMKhMEk=/?utm_source=notification&utm_medium=email&utm_campaign=daily-updates&utm_content=go-to-board/)
+
+## Requisitos
 
 
 ## Desenvolvedores
