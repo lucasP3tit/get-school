@@ -1,28 +1,35 @@
 <%- include('../../partials/header.ejs') %>
-<%- include('../../partials/navbar.ejs') %>
+<nav class="navbar navbar-default bg-light">
+    <div class="container-fluid justify-content-center">
+      <div class="navbar-header">
+        <h2>Detalhes do Aluno</h2>
+      </di>
+    </div>
+</nav>   
     <div class="container">
         <div class="card mt-2">
-            <div class="card-header">
-                <h2>Detalhe do aluno</h2>
-            </div>
             <div class="card-body">
                 <form id="form-aluno" method="POST" action="/admin/aluno/update/<%= aluno.id %>">
-                    <label for="matricula"><strong>Matrícula:</strong></label>
-                    <input type="text" disabled id="matricula" name="matricula" class="form-control mb-2" value="<%= aluno.matricula %>">
+                    <button id="btn-editar" class="btn btn-warning mt-2" onclick = "habilitarForm()"><i class="far fa-edit"></i> Editar</button>
+                    <button id="btn-salvar" disabled class ="btn btn-success mt-2"><i class="far fa-save"></i> Salvar</button>
+                    <button id="btn-cancelar" disabled class="btn btn-danger mt-2" onclick = "desabilitarForm()"><i class="fas fa-ban"></i> Cancelar</button>
+                    <br><br>
                     <label for="nome"><strong>Nome:</strong></label>
                     <input type="text" disabled id="nome" name="nome" class="form-control mb-2" value="<%= aluno.nome %>">
+                    <label for="matricula"><strong>Matrícula:</strong></label>
+                    <input type="text" disabled id="matricula" name="matricula" class="form-control mb-2" value="<%= aluno.matricula %>">
                     <label for="matricula"><strong>Fone:</strong></label>
                     <input type="text" disabled id="fone" name="fone" class="form-control mb-2" value="<%= aluno.fone %>">
                     <label for="email"><strong>E-mail:</strong></label>
                     <input type="text" disabled id="email" name="email" class="form-control mb-2" value="<%= aluno.email %>">
-                    <a id="btn-voltar" class="btn btn-primary mt-2" href="/admin/alunos">Voltar</a>
-                    <button id="btn-editar" class="btn btn-warning mt-2" onclick = "habilitarForm()">Editar</button>
-                    <button id="btn-salvar" disabled class ="btn btn-primary mt-2">Salvar</button>
-                    <button id="btn-cancelar" disabled class="btn btn-danger mt-2" onclick = "desabilitarForm()">Cancelar</button>
+                    
+                    
                 </form>
                 <form method ="POST" action="/admin/aluno/delete/<%= aluno.id %>" onsubmit="excluir(event)">
-                    <button class="btn btn-danger" id="btn-excluir">Excluir</button>
+                    <a id="btn-voltar" class="btn btn-primary mt-2" href="/admin/alunos"> <i class="fas fa-arrow-alt-circle-left"></i> Voltar</a>
+                    <button class="btn btn-danger align-bottom" id="btn-excluir"><i class="far fa-trash-alt"></i> Excluir</button>
                 </form>
+                
             </div>  
         </div>
     </div>

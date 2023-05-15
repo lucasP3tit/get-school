@@ -83,9 +83,9 @@ router.get("/admin/aluno/view/:id", adminAuth, (req, res)=>{
 
 router.post("/admin/aluno/update/:id", adminAuth, (req, res)=>{
     let id =req.params.id;
-    let nome = req.params.nome;
-    let matricula = req.params.matricula;
-    let fone = req.params.fone;
+    let nome = req.body.nome;
+    let matricula = req.body.matricula;
+    let fone = req.body.fone;
     let email = req.body.email;
 
     if(!isNaN(id)){
