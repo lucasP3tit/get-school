@@ -1,5 +1,5 @@
 
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%10DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 
 # Sistema GetSchool
 
