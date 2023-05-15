@@ -27,7 +27,7 @@ Usuário para acesso ao sistema:
 
 * Ao executar pela primeira vez o projeto, será criado o usuário com login "admin@admin.com" e senha ="admin123", utilize ele para logar e acessar o sistema.
 
-## Desenvolvedores
+## Autores
 
 Grupo 16 - 2023:
 - Camila Santana Wisnieski
